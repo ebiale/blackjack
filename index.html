@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>BlackJack</title>
+</head>
+
+<body>
+    <header class="title">
+        BlackJack
+    </header>
+
+    <div class="row mt-2">
+        <div class="col text-center">
+
+            <button id="btnNew" class="btn btn-danger">New Game</button>
+            <button id="btnHit" class="btn btn-info">Hit</button>
+            <button id="btnStand" class="btn btn-info">Stand</button>
+        </div>
+    </div>
+
+    <div class="row container">
+        <div class="col">
+
+            <h3>Player 1 - <small class="points">0</small></h3>
+            <hr>
+            <div id="player-cards" class="cards-container">
+            </div>
+        </div>
+
+    </div>
+    <br><br>
+    <div class="row container">
+        <div class="col">
+
+            <h3>Computer - <small class="points">0</small></h3>
+            <hr>
+            <div id="pc-cards" class="cards-container">
+            </div>
+        </div>
+
+    </div>
+
+    <script src="assets/js/underscore.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="assets/js/sweetalert2.all.min.js"></script>
+    <script src="assets/js/game.min.js"></script>
+
+    <script>
+        gameModule.newGame();
+    </script>
+</body>
+
+</html>

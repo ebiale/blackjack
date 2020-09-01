@@ -1,0 +1,25 @@
+html,
+body {
+    background-color: #2f4f30;
+    color: white;
+    margin: 0;
+}
+
+.title {
+    text-align: center;
+    background-color: black;
+    padding: 20px;
+    font-size: 25px;
+}
+
+.bj-card {
+    width: 150px;
+    position: relative;
+    left: 100px;
+    margin-left: -75px;
+}
+
+#pc-cards,
+#player-cards {
+    height: 250px;
+}
