@@ -100,12 +100,16 @@ const gameModule = (() => {
                     icon: 'warning',
                     title: 'It is a tie',
                     text: 'No one wins'
-                });
+                }).then((result) => {
+                    if (result.value) {
+                        newGame();
+                    }
+                });;
             } else if (points > minPoints && points <= 21) {
                 Swal.fire({
                     icon: 'error',
                     title: 'GAME OVER',
-                    text: 'PC Wons!'
+                    text: `PC: ${points} - YOU: ${minPoints} => PC Wons!`
                 }).then((result) => {
                     if (result.value) {
                         newGame();
@@ -115,14 +119,14 @@ const gameModule = (() => {
                 Swal.fire({
                     icon: 'success',
                     title: 'Congratulations!!',
-                    text: 'You won'
+                    text: `PC: ${points} - YOU: ${minPoints} => You Won!`
                 }).then((result) => {
                     if (result.value) {
                         newGame();
                     }
                 });
             }
-        });
+        }, 2000);
 
     };
 
