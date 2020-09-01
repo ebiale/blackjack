@@ -8,12 +8,13 @@ body {
 .title {
     text-align: center;
     background-color: black;
-    padding: 20px;
-    font-size: 25px;
+    padding: 5px;
+    font-size: 24px;
 }
 
 .bj-card {
-    width: 150px;
+    height: 25vh;
+    max-height: 250px;
     position: relative;
     left: 100px;
     margin-left: -75px;
@@ -21,5 +22,6 @@ body {
 
 #pc-cards,
 #player-cards {
-    height: 250px;
+    height: 25vh;
+    max-height: 250px;
 }
