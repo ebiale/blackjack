@@ -1,4 +1,4 @@
-const gameModule = (() => {
+const gameModule2 = (() => {
 
     'use strict';
 
